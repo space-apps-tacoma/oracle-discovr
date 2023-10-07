@@ -35,18 +35,35 @@ In the shell type
 ```bash
 streamlit run main.py
 ```
-* On replit.com
-  * Then press the green `Run` button.
-  * View the app in the Webview pane
-    *  To see full screen, press the Webview "Open in a new tab" button
 
-### NEXT TODO
-* 
-* figure out if 'b' column labels are accurate
-  * bx, by, bz were a guess. What is the correct orientation 
-* evaluate csv with pandas etc
+### Notes
+* Experimentation Data
+  * 1 minute timestamp in UTC (1st column) 
+  * Working with magnetic field vector data (2nd - 4th columns)
+    * expressed in units of nanoTesla (nT) and provided in the Geocentric Solar Ecliptic reference frame (GSE)
+  * 
 * add `tensorflow` to the project as part of stream lit?
 * calculate total vector bt = bx + by + bz for each row?
+
+### NEXT TODO
+* Centralize data storage for easy access
+* Data Cleaning and Visualization
+  * Experimentation data
+  * Canadian data
+    * Ground observatories
+    * Canadian satellite
+  * kP Index data
+    * Goes off 3 hour intervals
+* Use other data to validate experimentation data
+  * What are the anomalies?
+* Build the model
+  * Pytorch vs Tensorflow?
+  * Predict kP index
+  * How do anamolies affect the model?
+  * Classification of larger kP index storms?
+* Presentation method
+  * Slides and video for demonstration/explanation?
+
 ----
 
 ### Reference
