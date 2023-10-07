@@ -43,6 +43,8 @@ streamlit run main.py
     * expressed in units of nanoTesla (nT) and provided in the Geocentric Solar Ecliptic reference frame (GSE)
     * Total vector bt = bx + by + bz
   * Last fifty values (columns 5-54) represent a "raw" measurement spectrum interval from the Faraday cup plasma detector. With each value corresponding to the flow strength of the solar wind in a particular range of energies (or flow speeds). Hence each column represents a particular interval for the range of flow speeds.
+* kP Index Data
+  * Goes off 3 hour intervals
 
 ### NEXT TODO
 * Centralize data storage for easy access
@@ -52,7 +54,8 @@ streamlit run main.py
     * Ground observatories
     * Canadian satellite
   * kP Index data
-    * Goes off 3 hour intervals
+    * Compare to experimentation data for predicting kP index
+    * Can this comparison be used to spot the anomalies?
 * Use other data to validate experimentation data
   * What are the anomalies?
 * Build the model
