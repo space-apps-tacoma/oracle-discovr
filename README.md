@@ -41,9 +41,8 @@ streamlit run main.py
   * 1 minute timestamp in UTC (1st column) 
   * Working with magnetic field vector data (2nd - 4th columns)
     * expressed in units of nanoTesla (nT) and provided in the Geocentric Solar Ecliptic reference frame (GSE)
-  * 
-* add `tensorflow` to the project as part of stream lit?
-* calculate total vector bt = bx + by + bz for each row?
+    * Total vector bt = bx + by + bz
+  * Last fifty values (columns 5-54) represent a "raw" measurement spectrum interval from the Faraday cup plasma detector. With each value corresponding to the flow strength of the solar wind in a particular range of energies (or flow speeds). Hence each column represents a particular interval for the range of flow speeds.
 
 ### NEXT TODO
 * Centralize data storage for easy access
