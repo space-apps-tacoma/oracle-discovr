@@ -52,6 +52,9 @@ streamlit run main.py
   * Experimentation data
   * Canadian data
     * Ground observatories
+      * CARISMA
+        * Interprating data
+          * https://carisma.ca/carisma-data/fgm-data-format
     * Canadian satellite
   * kP Index data
     * Compare to experimentation data for predicting kP index
