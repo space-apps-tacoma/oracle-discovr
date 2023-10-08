@@ -4,6 +4,9 @@
 import gzip
 import os
 
+# Years of data to extract
+years = ['2016', '2017']
+
 # Days of data to extract
 days = ['06', '07', '08']
 
