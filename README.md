@@ -40,10 +40,16 @@ Data from Canada's magnetometer network can be downloaded from this [site](https
 Once the desired .tar files have been downloaded, you can run the following to extract the files from the .tar encryption. Be sure to change directory to the directory housing your tar file for extraction.
 
 ```bash
-python3 carisma_data/carisma_processing/tar_extract.py your_tar_file_name desired_directory_for_extracted_file
+python3 file_path_to/tar_extract.py your_tar_file_name desired_directory_for_extracted_file
 ```
 
+After the .tar file contents have been extracted to a directory for the year, nesting directories for month and days, then you'll need to extract the data from the gzip files.
 
+From your terminal you can run `gz_extract.py` with the proper parameters to extract the data from the gzip files.
+
+Utilizing code within `carisma_preprocess_to_csv.ipynb`, the text files extracted from the gzip files could then be cleaned, condensed, and put into a csv for ease of use.
+
+Finally, `carisma_preprocesses_data_selected_range.ipynb` could then be used to select a specific range of data for assessment.
 
 ### Notes
 * Experimentation Data [:link:](https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/)
