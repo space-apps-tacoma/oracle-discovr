@@ -84,8 +84,10 @@ streamlit run main.py
 * SME discussion | github [:link:](https://github.com/nasa/spaceapps/discussions/361)
 * https://donnees-data.asc-csa.gc.ca/dataset/98466021-2q1w-5g2d-677zwru214wx68
 * https://omniweb.gsfc.nasa.gov/form/dx2.html
+* https://science.nasa.gov/mission/dscovr/
 * https://hpde.io/NASA/NumericalData/OMNI/PT1H
 * https://omniweb.gsfc.nasa.gov/coho/form/helios1_f.html
+* https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-information-policy/data-levels 
 * https://www.swpc.noaa.gov/products/planetary-k-index
   * -> Products and Data
     * -> Observations - Boulder magnetometer
