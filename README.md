@@ -5,7 +5,11 @@
 > NASA Space Apps Challenge Tacoma Location [:link:](https://www.spaceappschallenge.org/2023/locations/tacoma-wa/)
 
 ----
-### Usage
+### Data Collection
+
+#### NASA DSCOVR Experimentation Data
+
+To download and extract the experimentation data, perform the following.
 
 In the shell
 
@@ -29,12 +33,17 @@ Optionally delete the zip files
 python3 01_preprocessing/03-delete-zip-files.py 
 ```
 
-### Run the app
+#### Canada Carisma Magnetometer Network
 
-In the shell type
+Data from Canada's magnetometer network can be downloaded from this [site](https://donnees-data.asc-csa.gc.ca/dataset/06f5e364-6e2c-4d1c-95c2-9fb7d871ca20) for the 2016 and 2017 years to validate the readings of the magnetic field vector from NASA's experimentation data. The .tar files will need to be downloaded to your personal system due to large file size.
+
+Once the desired .tar files have been downloaded, you can run the following to extract the files from the .tar encryption. Be sure to change directory to the directory housing your tar file for extraction.
+
 ```bash
-streamlit run main.py
+python3 carisma_data/carisma_processing/tar_extract.py your_tar_file_name desired_directory_for_extracted_file
 ```
+
+
 
 ### Notes
 * Experimentation Data [:link:](https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/)
@@ -84,8 +93,10 @@ streamlit run main.py
 * SME discussion | github [:link:](https://github.com/nasa/spaceapps/discussions/361)
 * https://donnees-data.asc-csa.gc.ca/dataset/98466021-2q1w-5g2d-677zwru214wx68
 * https://omniweb.gsfc.nasa.gov/form/dx2.html
+* https://science.nasa.gov/mission/dscovr/
 * https://hpde.io/NASA/NumericalData/OMNI/PT1H
 * https://omniweb.gsfc.nasa.gov/coho/form/helios1_f.html
+* https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-information-policy/data-levels 
 * https://www.swpc.noaa.gov/products/planetary-k-index
   * -> Products and Data
     * -> Observations - Boulder magnetometer
