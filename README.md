@@ -51,6 +51,19 @@ Utilizing code within `carisma_preprocess_to_csv.ipynb`, the text files extracte
 
 Finally, `carisma_preprocesses_data_selected_range.ipynb` could then be used to select a specific range of data for assessment.
 
+### Analysis
+'NASA_2016-2023_all_data.ipynb'
+'NASA_2016-2023_condensed_data.ipynb'
+'NASA_2016.ipynb'
+'NASA_2017.ipynb'
+'NASA_2023.ipynb'
+'Untitled.ipynb'
+
+### Model
+kP Index data: 'kP_index_data.csv'
+'kp_predict_tf.ipynb'
+'experimental.ipynb'
+
 ----
 
 ### References
