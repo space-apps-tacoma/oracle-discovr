@@ -51,46 +51,15 @@ Utilizing code within `carisma_preprocess_to_csv.ipynb`, the text files extracte
 
 Finally, `carisma_preprocesses_data_selected_range.ipynb` could then be used to select a specific range of data for assessment.
 
-### Notes
-* Experimentation Data [:link:](https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/)
-  * 1 minute timestamp in UTC (1st column) 
-  * Working with magnetic field vector data (2nd - 4th columns)
-    * expressed in units of nanoTesla (nT) and provided in the Geocentric Solar Ecliptic reference frame (GSE)
-    * Total vector bt = bx + by + bz
-  * Last fifty values (columns 5-54) represent a "raw" measurement spectrum interval from the Faraday cup plasma detector. With each value corresponding to the flow strength of the solar wind in a particular range of energies (or flow speeds). Hence each column represents a particular interval for the range of flow speeds.
-* kP Index Data
-  * Goes off 3 hour intervals
-
-### NEXT TODO
-* Centralize data storage for easy access
-* Data Cleaning and Visualization
-  * Experimentation data
-  * Canadian data
-    * Ground observatories
-      * CARISMA
-        * Interprating data
-          * https://carisma.ca/carisma-data/fgm-data-format
-    * Canadian satellite
-  * kP Index data
-    * Compare to experimentation data for predicting kP index
-    * Can this comparison be used to spot the anomalies?
-* Use other data to validate experimentation data
-  * What are the anomalies?
-* Build the model
-  * Pytorch vs Tensorflow?
-  * Predict kP index
-  * How do anamolies affect the model?
-  * Classification of larger kP index storms?
-* Presentation method
-  * Slides and video for demonstration/explanation?
-
 ----
 
-### Reference
+### References
 
-#### DISCOVR
+#### NASA and Canadian Space Agency
 
 * __develop-the-oracle-of-dscovr__  challenge description [:link:](https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/)
+
+* Experimentation Data [:link:](https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/)
 
 * Faraday Cup | Wikipedia [:link:](https://en.wikipedia.org/wiki/Faraday_cup) 
 
@@ -99,6 +68,7 @@ Finally, `carisma_preprocesses_data_selected_range.ipynb` could then be used to 
 * SME discussion | github [:link:](https://github.com/nasa/spaceapps/discussions/361)
 * https://donnees-data.asc-csa.gc.ca/dataset/98466021-2q1w-5g2d-677zwru214wx68
 * https://omniweb.gsfc.nasa.gov/form/dx2.html
+* https://carisma.ca/carisma-data/fgm-data-format
 * https://science.nasa.gov/mission/dscovr/
 * https://hpde.io/NASA/NumericalData/OMNI/PT1H
 * https://omniweb.gsfc.nasa.gov/coho/form/helios1_f.html
