@@ -37,7 +37,7 @@ streamlit run main.py
 ```
 
 ### Notes
-* Experimentation Data
+* Experimentation Data [:link:](https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/)
   * 1 minute timestamp in UTC (1st column) 
   * Working with magnetic field vector data (2nd - 4th columns)
     * expressed in units of nanoTesla (nT) and provided in the Geocentric Solar Ecliptic reference frame (GSE)
